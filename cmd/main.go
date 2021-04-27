@@ -28,7 +28,7 @@ func main() {
 }
 
 func scrapeCoursesByDay() {
-	ticker := time.NewTimer(24 * time.Hour)
+	ticker := time.NewTicker(24 * time.Hour)
 	getAndSaveCourses()
 	for {
 		select {
